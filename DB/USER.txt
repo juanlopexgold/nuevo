@@ -1,0 +1,34 @@
+Usuario: integrador4
+Clave: integrador4
+
+LOS ENDPOINTS:
+------Categorias------
+listar: (GET)
+http://localhost:5000/api/categorias/listar
+
+buscar por ID: (GET)
+http://localhost:5000/api/categorias/buscar/1
+
+insertar: (POST)
+http://localhost:5000/api/categorias/insertar
+{
+    "categorias": "Nuevo",
+    "descripcion": "Insercion de datos",
+    "estado": true
+}
+
+modificar: (PUT)
+http://localhost:5000/api/categorias/modificar
+{
+    "IdCategoria": 1,
+    "Categorias": "Modificacion",
+    "Descripcion": "Dispositivos electrónicos",
+    "Estado": true
+}
+
+eliminar: DELETE
+http://localhost:5000/api/categorias/eliminar/1
+
+------Modelos------
+------Macas------
+------Productos------
