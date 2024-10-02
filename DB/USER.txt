@@ -29,6 +29,39 @@ http://localhost:5000/api/categorias/modificar
 eliminar: DELETE
 http://localhost:5000/api/categorias/eliminar/1
 
+
+
+
+
 ------Modelos------
+insertar: (POST)
+http://localhost:5000/api/modelos/
+{
+  "Nombre": "Nombre del modelo",
+  "Descripcion": "Descripción del modelo",
+  "Estado": true
+}
+
+modificar: (PUT)
+http://localhost:5000/api/modelos/modificar
+{
+  "IdModelo": 1,
+  "Nombre": "Nuevo nombre del modelo",
+  "Descripcion": "Descripción actualizada",
+  "Estado": true
+}
+
+
+buscar por ID: (GET)
+http://localhost:5000/api/modelos/buscar/1
+
+eliminar: DELETE
+http://localhost:5000/api/modelos/eliminar/1
+
+
+listar: (GET)
+http://localhost:5000/api/modelos/listar
+
+
 ------Macas------
 ------Productos------
